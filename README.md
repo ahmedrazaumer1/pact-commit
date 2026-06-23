@@ -30,7 +30,7 @@ What the tool **never** does:
 Requirements: Python 3.10+ on Linux, macOS, or Windows (WSL).
 
 ```bash
-git clone https://github.com/<your-org>/pact-commit.git
+git clone https://github.com/ahmedrazaumer1/pact-commit.git
 cd pact-commit
 python -m pip install -r requirements.txt
 ```
@@ -120,7 +120,7 @@ MIT License. See `LICENSE`.
 
 If you use this tool, please cite:
 
-> Raza, A. (2026). *Quantum Sunset Economics: A Game-Theoretic and Empirical Analysis of Bitcoin's Most Consequential Soft Fork.* Working paper. SSRN: [link to be added].
+> Raza, A. (2026). *Quantum Sunset Economics: A Game-Theoretic and Empirical Analysis of Bitcoin's Most Consequential Soft Fork.* Working paper. SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6901220.
 
 and the Robinson proposal it implements:
 
