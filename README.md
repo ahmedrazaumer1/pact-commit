@@ -69,9 +69,9 @@ This:
 - Computes the commitment hash.
 - Submits the commitment to OpenTimestamps.
 - Writes three files to `./pact-artifacts/`:
-  - `commitment.hex` — the 32-byte commitment hash you submitted (public).
-  - `recovery.json` — the salt, the BIP-322 signature, and metadata (**SECRET — back up like a private key**).
-  - `commitment.ots` — the OpenTimestamps proof file (back up alongside `recovery.json`).
+  - `commitment.hex`: the 32-byte commitment hash you submitted (public).
+  - `recovery.json`: the salt, the BIP-322 signature, and metadata (**SECRET: back up like a private key**).
+  - `commitment.ots`: the OpenTimestamps proof file (back up alongside `recovery.json`).
 
 ### Step 4 — Wait for confirmation, then upgrade the OTS proof
 
@@ -101,8 +101,8 @@ To commit for multiple addresses, run the prepare/finalize loop once per address
 The construction's security is derived from:
 
 - **Hash collision resistance** of SHA-256 (post-quantum reduced to ~128-bit security under Grover; still adequate for the protective horizon).
-- **OpenTimestamps integrity** — that the calendar server cannot retroactively forge an earlier timestamp than the one it actually published.
-- **Bitcoin chain integrity** — that the OTS-anchored block remains in the canonical chain.
+- **OpenTimestamps integrity:** that the calendar server cannot retroactively forge an earlier timestamp than the one it actually published.
+- **Bitcoin chain integrity:** that the OTS-anchored block remains in the canonical chain.
 
 The commitment reveals nothing about which address is committed for, the size of the holding, or the holder's identity, *provided* that:
 
@@ -120,11 +120,16 @@ MIT License. See `LICENSE`.
 
 If you use this tool, please cite:
 
-> Raza, A. (2026). *Quantum Sunset Economics: A Game-Theoretic and Empirical Analysis of Bitcoin's Most Consequential Soft Fork.* Working paper. SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6901220.
+> Raza, A. (2026). *Quantum Sunset Economics: A Game-Theoretic and Empirical Analysis of Bitcoin's Most Consequential Soft Fork.* Working paper (v2, July 2026). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6901220.
 
 and the Robinson proposal it implements:
 
 > Robinson, D. (2026). *PACTs: Protecting Your Bitcoin From a Quantum Sunset.* Paradigm Research. https://www.paradigm.xyz/2026/05/pacts-protecting-your-bitcoin-from-a-quantum-sunset
+
+## See also
+
+- **Public peer review.** The paper's methodology was discussed on Delving Bitcoin, where Adam Gibson (AdamISZ) engaged at length. Gibson's methodological critique shaped the v2 revision, which moved the headline exposed-supply figure from 25.30% to 35.30%. Thread: [Quantum Sunset Economics: a working paper analyzing PACT adoption](https://delvingbitcoin.org/t/quantum-sunset-economics-a-working-paper-analyzing-pact-adoption/2645).
+- **Empirical measurement code.** The BigQuery UTXO cohort analysis that produces the §3 exposure figures (including the 35.30% headline) lives separately from this reference implementation. It is described in Section 3 of the paper linked above.
 
 ## Disclaimer
 
