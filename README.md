@@ -131,6 +131,10 @@ and the Robinson proposal it implements:
 - **Public peer review.** The paper's methodology was discussed on Delving Bitcoin, where Adam Gibson (AdamISZ) engaged at length. Gibson's methodological critique shaped the v2 revision, which moved the headline exposed-supply figure from 25.30% to 35.30%. Thread: [Quantum Sunset Economics: a working paper analyzing PACT adoption](https://delvingbitcoin.org/t/quantum-sunset-economics-a-working-paper-analyzing-pact-adoption/2645).
 - **Empirical measurement code.** The BigQuery UTXO cohort analysis that produces the §3 exposure figures (including the 35.30% headline) lives separately from this reference implementation. It is described in Section 3 of the paper linked above.
 
+## Coverage
+
+- **Reuters, 8 July 2026.** [Crypto firms prepare defenses as quantum threat to encryption draws nearer](https://www.reuters.com/legal/government/crypto-firms-prepare-defenses-quantum-threat-encryption-draws-nearer-2026-07-08/), by Hannah Lang. Cites the paper's approximately 35 percent figure for Bitcoin's quantum-exposed supply.
+
 ## Disclaimer
 
 This is a research artifact, not a production tool. The PACT commitment format is a draft. Bitcoin may never implement a rescue protocol that recognizes commitments in this format. Do not rely on PACTs as your sole quantum-protection strategy. Do not use this tool in any production custody flow.
