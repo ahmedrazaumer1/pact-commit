@@ -120,7 +120,7 @@ MIT License. See `LICENSE`.
 
 If you use this tool, please cite:
 
-> Raza, A. (2026). *Quantum Sunset Economics: A Game-Theoretic and Empirical Analysis of Bitcoin's Most Consequential Soft Fork.* Working paper (v2, July 2026). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6901220.
+> Raza, A. (2026). *Quantum Sunset Economics: A Game-Theoretic and Empirical Analysis of Bitcoin's Most Consequential Soft Fork.* Working paper (v7, August 2026). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6901220.
 
 and the Robinson proposal it implements:
 
@@ -128,12 +128,12 @@ and the Robinson proposal it implements:
 
 ## See also
 
-- **Public peer review.** The paper's methodology was discussed on Delving Bitcoin, where Adam Gibson (AdamISZ) engaged at length. Gibson's methodological critique shaped the v2 revision, which moved the headline exposed-supply figure from 25.30% to 35.30%. Thread: [Quantum Sunset Economics: a working paper analyzing PACT adoption](https://delvingbitcoin.org/t/quantum-sunset-economics-a-working-paper-analyzing-pact-adoption/2645).
-- **Empirical measurement code.** The BigQuery UTXO cohort analysis that produces the §3 exposure figures (including the 35.30% headline) lives separately from this reference implementation. It is described in Section 3 of the paper linked above.
+- **Public peer review.** The paper's methodology was discussed on Delving Bitcoin, where Adam Gibson (AdamISZ) engaged at length. Gibson's methodological critique shaped the v2 revision, which moved the headline exposed-supply figure upward by about ten percentage points. Thread: [Quantum Sunset Economics: a working paper analyzing PACT adoption](https://delvingbitcoin.org/t/quantum-sunset-economics-a-working-paper-analyzing-pact-adoption/2645).
+- **Empirical measurement code.** The BigQuery UTXO cohort analysis that produces the §3 exposure figures (the headline is now a measured band, 34.911% to 35.005% of unspent supply at block 959,800; the 35.30% figure this README previously quoted is superseded) lives separately from this reference implementation. It is described in Section 3 of the paper linked above.
 
 ## Coverage
 
-- **Reuters, 8 July 2026.** [Crypto firms prepare defenses as quantum threat to encryption draws nearer](https://www.reuters.com/legal/government/crypto-firms-prepare-defenses-quantum-threat-encryption-draws-nearer-2026-07-08/), by Hannah Lang. Cites the paper's approximately 35 percent figure for Bitcoin's quantum-exposed supply.
+- **Reuters, 8 July 2026.** [Crypto firms prepare defenses as quantum threat to encryption draws nearer](https://www.reuters.com/legal/government/crypto-firms-prepare-defenses-quantum-threat-encryption-draws-nearer-2026-07-08/), by Hannah Lang. Cites the figure the paper carried at the time, approximately 35 percent of Bitcoin's supply as quantum-exposed. The measurement has since been pinned to block 959,800 and is now stated as a band, 34.911 to 35.005 percent of unspent supply; the article is described here as published, not restated.
 
 ## Disclaimer
 
